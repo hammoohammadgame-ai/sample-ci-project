@@ -6,7 +6,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/hammoohammadgame-ai/sample-ci-project.git'
+                git branch: 'main', url: 'https://github.com/hammoohammadgame-ai/sample-ci-project.git'
             }
         }
 
